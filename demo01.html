@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>万花筒动画特效--小梁出品</title>
+    <style>
+        .box {
+            background-color: black;
+            margin: 250px auto 0 auto;
+            transform: rotateX(-10deg);
+            transform: rotateY();
+            transform-style: preserve-3d;
+            /* 可以让自己的子元素具有3d效果 */
+            animation: change 5s infinite linear ;
+        }
+        .box:hover {
+            animation-play-state: paused;
+
+        }
+        .box div {
+            position: absolute;
+        }
+        img {
+            width: 350px;
+            height: 500px;
+        }
+        .pic1 {
+            transform: rotateY(0deg) translateZ(500px);
+            /* 变化 旋转   x z y */
+        }
+        .pic2 {
+            transform: rotateY(40deg) translateZ(500px);
+            /* 变化 旋转   x z y */
+        }
+        .pic3 {
+            transform: rotateY(80deg) translateZ(500px);
+            /* 变化 旋转   x z y */
+        }
+        .pic4 {
+            transform: rotateY(120deg) translateZ(500px);
+            /* 变化 旋转   x z y */
+        }
+        .pic5 {
+            transform: rotateY(160deg) translateZ(500px);
+            /* 变化 旋转   x z y */
+        }
+        .pic6 {
+            transform: rotateY(200deg) translateZ(500px);
+            /* 变化 旋转   x z y */
+        }
+        .pic7 {
+            transform: rotateY(240deg) translateZ(500px);
+            /* 变化 旋转   x z y */
+        }
+        .pic8 {
+            transform: rotateY(280deg) translateZ(500px);
+            /* 变化 旋转   x z y */
+        }
+        .pic9 {
+            transform: rotateY(320deg) translateZ(500px);
+            /* 变化 旋转   x z y */
+        }
+        .pic10 {
+            transform: rotateY(360deg) translateZ(500px);
+            /* 变化 旋转   x z y */
+        }
+
+        @keyframes change {
+            0% {
+                transform: rotateX(-10deg) rotateY(0deg);
+            }
+            100% {
+                transform: rotateX(-10deg) rotateY(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="pic1"><img src="imge/1.jpg" ></div>
+        <div class="pic2"><img src="imge/2.jpg" ></div>
+        <div class="pic3"><img src="imge/3.jpg" ></div>
+        <div class="pic4"><img src="imge/4.jpg" ></div>
+        <div class="pic5"><img src="imge/5.jpg" ></div>
+        <div class="pic6"><img src="imge/6.jpg" ></div>
+        <div class="pic7"><img src="imge/7.jpg" ></div>
+        <div class="pic8"><img src="imge/8.jpg" ></div>
+        <div class="pic9"><img src="imge/9.jpg" ></div>
+        <div class="pic10"><img src="imege/10.jpg" ></div>
+    </div>
+</body>
+</html>
